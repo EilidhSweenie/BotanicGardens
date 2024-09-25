@@ -1,22 +1,26 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
+import Header from './components/Header';
 
-const inter = Inter({ subsets: ["latin"] });
+const opensans = Open_Sans({
+  weight: ['400', '700'], // Specify font weights you need
+  subsets: ['latin'],     // Subsets you need
+  display: 'swap',        // Use 'swap' to prevent FOIT (Flash of Invisible Text)
+});
 
 export const metadata: Metadata = {
   title: "Botanic Gardens",
-  description: "A botanic gardens blog",
+  description: "A blog dedicated to botanic gardens",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({children}: Readonly<{children: React.ReactNode;}>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <body className={opensans.className}> 
+      <Header/>
+      {children}
+    </body>
+  </html>
   );
 }
