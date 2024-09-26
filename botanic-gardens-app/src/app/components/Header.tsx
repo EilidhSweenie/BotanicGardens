@@ -8,7 +8,11 @@ const Header = () => {
     <img src="/images/header-background.jpg" alt="Header Background" className={styles.headerImage} />
 
     {/* Title Section */}
-      <h1 className={styles.title}>Botanic Garden Girlie</h1>
+      <h1 className={styles.title}>
+        <Link href="/">
+          Botanic Garden Girlie
+        </Link>
+      </h1>
       
       {/* Nav Bar Items List */}
       <nav>
