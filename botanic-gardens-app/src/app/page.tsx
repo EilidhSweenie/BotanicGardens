@@ -10,7 +10,7 @@ const Home = () => {
         <meta name="home page" content="Home Page" />
       </Head>
       <main>
-        <h1>Hello World</h1>
+        <h1>Hello Home Page!</h1>
       </main>
     </div>
   );
