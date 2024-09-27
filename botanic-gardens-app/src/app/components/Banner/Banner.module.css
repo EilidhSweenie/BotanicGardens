@@ -1,0 +1,56 @@
+/* src/components/Banner/Banner.module.css */
+
+.bannerContainer {
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+    max-height: 1000px;
+    margin: 40px auto;
+    border: 4px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+  }
+  
+  .image {
+    width: 100%; 
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .textOverlay {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    text-align: left;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #1A4D2E, 3px 3px 5px #1A4D2E;
+  }
+  
+  .button {
+    background-color: #1A4D2E;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #4F6F52;
+  }
+  
