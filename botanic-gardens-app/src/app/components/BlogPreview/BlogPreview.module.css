@@ -1,0 +1,58 @@
+/* src/components/BlogPreview/BlogPreview.module.css */
+.blogPreviewContainer {
+  flex: 1 1 calc(25% - 40px); /*Four items per row, adjusting for margins */
+  border: 2px solid #1A4D2E; /* Optional border */
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 100%; /* Ensure it doesn't overflow */
+  min-width: 280px; /* Set a reasonable minimum width */
+}
+
+.blogPreviewContainer:hover {
+  transform: translateY(-5px); /* Add slight hover effect */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100%;
+  height: 180px; /* Fixed height for the image */
+  object-fit: cover;
+  object-position: center;
+}
+
+.textContainer {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 12rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.excerpt {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.readMoreButton {
+  background-color: #1A4D2E;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.readMoreButton:hover {
+  background-color: #4F6F52;
+}
